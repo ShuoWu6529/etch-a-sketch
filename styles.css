@@ -15,10 +15,10 @@ html {
 * {
     margin: 0;
     padding: 0;
-    border: 1px solid red;
 }
 
 body {
+    font-family: 'Courier New', Courier, monospace;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -37,14 +37,36 @@ body {
     flex-wrap: wrap;
     width: 500px;
     height: 500px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: -4px 4px 10px 2px #A5A8A4;
+    padding: 10px;
 }
 
 .cell {
     flex-grow: 1;
     flex-shrink: 0;
     flex-basis: var(--cell-size);
+    cursor: crosshair;
 }
 
 .colored {
     background-color: black;
+}
+
+.header {
+    margin-top: 20px;
+}
+
+.footer {
+    margin-bottom: 20px;
+}
+
+button {
+    font-family: 'Courier New', Courier, monospace;
+    width: 100px;
+    height: 50px;
+    padding: 5px;
+    margin-block: 10px;
+    display: block;
 }

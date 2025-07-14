@@ -16,10 +16,16 @@ function makeGrid(length) {
     container.addEventListener("mouseover", (e) => {
         const target = e.target;
         if (target.className === "container") return;
-
         if (e.buttons === 1) {
             target.classList.add("colored");
         }
+    })
+
+    container.addEventListener("mousedown", (e) => {
+        const target = e.target;
+        if (target.className === "container") return;
+        target.classList.add("colored");
+        e.preventDefault();
     })
 }
 
@@ -43,5 +49,14 @@ function removeGrid() {
     container.textContent = "";
 }
 
+function resetGrid() {
+    const btn = document.querySelector(".clear");
+    btn.addEventListener("click", ()=>{
+        removeGrid();
+        makeGrid(16);
+    })
+}
+
 makeGrid(16);
 resizeGrid();
+resetGrid()
