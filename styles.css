@@ -70,3 +70,7 @@ button {
     margin-block: 10px;
     display: block;
 }
+
+.container, .cell {
+  user-select: none;
+}

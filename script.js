@@ -25,7 +25,6 @@ function makeGrid(length) {
         const target = e.target;
         if (target.className === "container") return;
         target.classList.add("colored");
-        e.preventDefault();
     })
 }
 
