@@ -23,5 +23,25 @@ function makeGrid(length) {
     })
 }
 
+function resizeGrid() {
+    const btn = document.querySelector(".resize");
+    btn.addEventListener("click", () => {
+        removeGrid();
+        let val = prompt("Choose an integer between 1 and 100");
+        let length = parseInt(val);
+        if (Number.isNaN(length)) return;
+        if (length < 1 || length > 100) {
+            alert("Invalid number");
+            return;
+        }
+        makeGrid(length);
+    })
+}
+
+function removeGrid() {
+    const container = document.querySelector(".container");
+    container.textContent = "";
+}
 
 makeGrid(16);
+resizeGrid();
