@@ -1,5 +1,94 @@
 # Etch-A-Sketch
-Etch-A-Sketch is a project to exercise and showcase HTML, CSS, and Javascript fundamentals.
 
-This is a 16x16 grid of squares, where each square turns black when hovered over.
-In other words, a sketchpad.
+Etch-A-Sketch is a browser-based sketchpad built to practice and demonstrate HTML, CSS, and JavaScript fundamentals. Inspired by the classic <a href="https://en.wikipedia.org/wiki/Etch_A_Sketch">Etch A Sketch</a>, this project recreates a simple drawing experience using a dynamic grid and hover interactions.
+
+---
+
+## Overview
+
+This project generates a 16×16 grid of square div elements in the browser. When a user hovers over a square, it turns black, allowing the user to draw by moving the mouse across the grid.
+
+The grid is created dynamically using JavaScript, and all interactivity is handled through DOM manipulation and event listeners.
+
+---
+
+## Features
+
+- 16×16 grid (256 total squares)
+- Squares change color on hover
+- Grid generated dynamically with JavaScript
+- Built using only HTML, CSS, and vanilla JavaScript
+
+---
+
+## Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript (ES6)
+
+No frameworks or external libraries are used.
+
+---
+
+## Project Structure
+Etch-A-Sketch/
+│
+├── index.html # Main HTML file
+├── style.css # Styling and layout
+└── script.js # Grid generation and hover logic
+
+
+---
+
+## How It Works
+
+1. JavaScript creates a container grid.
+2. 256 square div elements are generated and appended to the container.
+3. Each square listens for a `mouseover` event.
+4. When triggered, the square's background color changes to black.
+
+---
+
+## Getting Started
+
+### Clone the Repository
+git clone https://github.com/ShuoWu6529/etch-a-sketch.git
+
+
+### Navigate to the Project Directory
+cd etch-a-sketch
+
+
+### Run the Project
+
+Open `index.html` in your preferred web browser.
+
+---
+
+## Possible Enhancements
+
+- Adjustable grid size (e.g., 32×32 or 64×64)
+- Color selection instead of black-only drawing
+- Clear or reset button
+- Random color mode
+- Dark mode support
+- Responsive layout improvements
+
+---
+
+## Learning Objectives
+
+This project helps reinforce:
+
+- DOM manipulation
+- Event handling
+- Dynamic element creation
+- CSS Grid or Flexbox layout
+- Separation of concerns (structure, style, behavior)
+
+---
+
+## License
+
+This project is open source and intended for educational purposes.
