@@ -31,49 +31,12 @@ No frameworks or external libraries are used.
 
 ---
 
-## Project Structure
-Etch-A-Sketch/
-│
-├── index.html # Main HTML file
-├── style.css # Styling and layout
-└── script.js # Grid generation and hover logic
-
-
----
-
 ## How It Works
 
 1. JavaScript creates a container grid.
 2. 256 square div elements are generated and appended to the container.
 3. Each square listens for a `mouseover` event.
 4. When triggered, the square's background color changes to black.
-
----
-
-## Getting Started
-
-### Clone the Repository
-git clone https://github.com/ShuoWu6529/etch-a-sketch.git
-
-
-### Navigate to the Project Directory
-cd etch-a-sketch
-
-
-### Run the Project
-
-Open `index.html` in your preferred web browser.
-
----
-
-## Possible Enhancements
-
-- Adjustable grid size (e.g., 32×32 or 64×64)
-- Color selection instead of black-only drawing
-- Clear or reset button
-- Random color mode
-- Dark mode support
-- Responsive layout improvements
 
 ---
 
